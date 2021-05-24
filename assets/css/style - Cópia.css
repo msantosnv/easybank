@@ -1,0 +1,145 @@
+body {
+  padding: 0;
+  margin: 0;
+  font-family: "Public Sans", sans-serif;
+}
+
+h1 {
+  font-size: 56px;
+  line-height: 64px;
+  font-weight: lighter;
+}
+h2 {
+  font-size: 24px;
+  line-height: 28px;
+  font-weight: 300;
+}
+p {
+  font-size: 16px;
+  font-weight: 100;
+  line-height: 26px;
+  color: #9597a5;
+}
+.container {
+  width: 1000px;
+  margin: 0 auto;
+}
+
+#top {
+  background-color: white;
+  width: 100%;
+  border: 1px solid red;
+  position: relative;
+  z-index: 1;
+}
+
+#top .container {
+  display: flex;
+  height: 80px;
+  align-items: center;
+  background-color: aqua;
+  box-sizing: border-box;
+}
+
+#nav {
+  margin: 0 auto;
+  height: 100%;
+  padding-top: 55px;
+}
+#menu {
+  display: block;
+}
+#menu li {
+  font-size: 14px;
+  float: left;
+}
+#menu li a {
+  float: left;
+  font-size: 14px;
+  color: #9597a5;
+  cursor: pointer;
+  padding-bottom: 31px;
+}
+
+#menu li:nth-child(even) {
+  padding: 0 30px;
+}
+
+#menu li a:hover {
+  color: #2d314d;
+  border-bottom: 4px solid;
+  border-image-slice: 1;
+  border-width: 5px;
+  border-image-source: linear-gradient(to right, #33d35e, #2ab6d9);
+}
+
+.btn-invite {
+  width: 160px;
+  border-radius: 50px;
+  font-size: 14px;
+  background: linear-gradient(150deg, #33d35e, #2ab6d9);
+  padding: 15px 5px;
+  text-align: center;
+  vertical-align: middle;
+  cursor: pointer;
+}
+
+.btn-invite a {
+  color: white;
+  font-weight: 700;
+}
+.btn-invite:hover {
+  width: 160px;
+  border-radius: 50px;
+  font-size: 14px;
+  background: linear-gradient(150deg, #84e3a6, #80d6e0);
+  padding: 15px 5px;
+  text-align: center;
+  vertical-align: middle;
+  color: red;
+}
+
+#banner {
+}
+
+#banner .container {
+  background-color: #f2f2f2;
+  display: flex;
+  flex-direction: row;
+  height: 655px;
+}
+
+#banner__image {
+  height: 400px;
+  width: 550px;
+  border: 1px solid red;
+}
+#banner__title {
+  width: 450px;
+  margin-top: 170px;
+  border: 1px solid blue;
+}
+#banner__title .btn-invite {
+  margin-top: 30px;
+}
+#choose {
+  background-color: #f4f5f7;
+  height: 300px;
+}
+#articles {
+  background-color: #f2f2f2;
+  height: 300px;
+}
+#footer {
+  background-color: #2d314d;
+  height: 300px;
+}
+
+.attribution {
+  font-size: 11px;
+  text-align: center;
+}
+
+.attribution a {
+  color: hsl(228, 45%, 44%);
+}
